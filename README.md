@@ -18,4 +18,6 @@ This Repo is part of a workshop for the UltraTool - Project by the weißensee ku
 * You might need to install the drive for the NodeMCU, as well: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 
 
+## NodeMCU (ESP8266) Pin-Out
+
 ![NodeMCU PinOut](https://camo.githubusercontent.com/2c53457216c16d904b4fe200948bc59926b1bf7ff33e46aca47df24a7bb917af/68747470733a2f2f62656e6e74686f6d73656e2e66696c65732e776f726470726573732e636f6d2f323031352f31322f6e6f64656d63755f70696e6f75745f3730302d322e706e67)
