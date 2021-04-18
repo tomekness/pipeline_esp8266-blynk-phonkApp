@@ -42,6 +42,8 @@ ADC pin --> analogRead(A0) | value --> 0–1023
 
 ## Blynk 
 
+![Blynk Architecture](https://docs.blynk.cc/images/architecture.png)
+
 check blynk documentation --> https://docs.blynk.cc/
 
 
