@@ -1,6 +1,6 @@
 
 # pipline demo --> ESP8266-bynk-phonk.app
-A simple way for prototyping physical interaciotns with Micro-controllers (ESP8266) and mobile phones (android phones running phonk.app). 
+A simple way for prototyping physical interaciotns with Micro-controllers (ESP8266) and mobile phones (android phones running [phonk.app](https://phonk.app/) ). 
 
 ![NodeMCU/blynk/phonk.app](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/allApps.jpg)
 
