@@ -79,7 +79,9 @@ Example 02 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 
 ## Example 03 - controll servo motor from Blynk  
 
+![servo setup](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/servo.jpeg)
 
+Example 03 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/03_ServoControll
 * Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
 * Open Arduino code from example Folder
