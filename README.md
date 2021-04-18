@@ -9,7 +9,7 @@ This Repository contains an Basic introduction on how to use [NodeMCUs (ESP8266)
 
 Addtionally you will find collection of simple examples to get stated.
 
-This Repo is part of a workshop for the UltraTool - Project by the weißensee kunsthochschule Berlin (schon of art and design) and the Imperial Collage.
+This Repo is part of a workshop for the [UltraTool](https://kh-berlin.de/lehrangebote/show/ultratool-1316.html) - Project by the weißensee kunsthochschule Berlin (schon of art and design) and the Imperial Collage.
 
 
 ## preparation
