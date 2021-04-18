@@ -68,6 +68,7 @@ Example 01 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 
 ![Breadboard Setup - Anaog Input](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/SensorInput.jpeg)
 
+Example 02 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/02_SensorInput
 * Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
 * Open Arduino code from example Folder
