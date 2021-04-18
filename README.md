@@ -61,3 +61,25 @@ check blynk documentation --> https://docs.blynk.cc/
 * Adjust Wifi settings and Auth Token 
 * Upload Arduino code to your NodeNCU
 * Run Blynk App
+
+## Example 02 - Sensor Input  
+
+* Get blynk project by scanning the QR code in the example Folder
+* Get Device Auth Token send by Mail from Blynk.app
+* Open Arduino code from example Folder
+* Adjust Wifi settings and Auth Token
+* Setup Analog Sensor on Breadboard 
+* Upload Arduino code to your NodeNCU
+* Run Blynk App
+
+## Example 03 - controll servo motor from Blynk  
+
+
+* Get blynk project by scanning the QR code in the example Folder
+* Get Device Auth Token send by Mail from Blynk.app
+* Open Arduino code from example Folder
+* Adjust Wifi settings and Auth Token
+* Setup Servo on Breadboard 
+* Upload Arduino code to your NodeNCU
+* Run Blynk App
+
