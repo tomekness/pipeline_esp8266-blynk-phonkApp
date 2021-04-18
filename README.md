@@ -53,7 +53,7 @@ check blynk documentation --> https://docs.blynk.cc/
 
 ## Example 01 - onBoard Button and LED  
 
-* Get blynk app by scanning the QR code in the example Folder
+* Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
 * Open Arduino code from example Folder
 * Adjust Wifi settings and Auth Token 
