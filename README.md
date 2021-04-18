@@ -41,8 +41,11 @@ ADC pin --> analogRead(A0) | value --> 0–1023
 
 
 ## Blynk 
-Blynk is a hardware-agnostic IoT platform with white-label mobile apps, private clouds, device management, data analytics, and machine learning. --> https://blynk.io
+
 ![Blynk Architecture](https://docs.blynk.cc/images/architecture.png)
+
+Blynk is a hardware-agnostic IoT platform with white-label mobile apps, private clouds, device management, data analytics, and machine learning. --> https://blynk.io
+
 
 check blynk documentation --> https://docs.blynk.cc/
 
