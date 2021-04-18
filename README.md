@@ -49,7 +49,8 @@ Blynk is a hardware-agnostic IoT platform with white-label mobile apps, private 
 
 check blynk documentation --> https://docs.blynk.cc/
 
-
+change blynk-server in blynk.app and arduino sketch --> https://github.com/blynkkk/blynk-server#app-and-sketch-changes
+change 
 
 ## Example 01 - onBoard Button and LED  
 
