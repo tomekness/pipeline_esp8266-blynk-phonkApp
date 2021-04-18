@@ -23,4 +23,4 @@ This Repo is part of a workshop for the [UltraTool](https://kh-berlin.de/lehrang
 
 ## NodeMCU (ESP8266) Pin-Out
 
-![NodeMCU PinOut](https://lastminuteengineers.com/wp-content/uploads/arduino/ESP-12E-Development-Board-ESP8266-NodeMCU-Pinout.png)
+![NodeMCU PinOut](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/NodeMCU_pinMap.png)
