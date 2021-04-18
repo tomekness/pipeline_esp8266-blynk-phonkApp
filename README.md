@@ -24,3 +24,17 @@ This Repo is part of a workshop for the [UltraTool](https://kh-berlin.de/lehrang
 ## NodeMCU (ESP8266) Pin-Out
 
 ![NodeMCU PinOut](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/NodeMCU_pinMap.png)
+
+**Digial InPins**
+D1 (Pin 5), D2 (Pin 4), D4 (Pin 2), D5 (Pin 14), D6 (Pin 12), D7 (Pin 13), D8 (Pin 15), D9 (Pin 3), D10 (Pin 1)
+onboard LED --> D0 / Pin 16 | onboard LED 2 --> D4 (Pin 2)
+onboard Button --> D3 / Pin 0
+
+**Analog Output**
+pin 0–15 --> analogWrite(pin, value) | value --> 0–1023
+set new value range analogWriteRange(new_range)
+WM frequency is 1kHz by default.
+set new frequency --> analogWriteFreq(new_frequency)
+
+**Analog Input**
+ADC pin --> analogRead(A0) | value --> 0–1023
