@@ -19,7 +19,7 @@ This Repo is part of a workshop for the [UltraTool](https://kh-berlin.de/lehrang
 * Download the Arduino IDE https://www.arduino.cc/en/software 
 * Add »ESP8266 core« Hardware-Library to Arduino ( find an HowTo here: https://lastminuteengineers.com/esp8266-nodemcu-arduino-tutorial/ or https://create.arduino.cc/projecthub/electropeak/getting-started-w-nodemcu-esp8266-on-arduino-ide-28184f or https://www.instructables.com/Steps-to-Setup-Arduino-IDE-for-NODEMCU-ESP8266-WiF/ )
 * You might need to install the drive for the NodeMCU, as well: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
-
+* Install Blynk Library in Arduino: http://help.blynk.cc/en/articles/512105-how-to-install-blynk-library-for-arduino-ide
 
 ## NodeMCU (ESP8266) Pin-Out
 
