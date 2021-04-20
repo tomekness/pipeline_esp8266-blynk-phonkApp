@@ -103,13 +103,13 @@ Example 05 Folder -->https://github.com/tomekness/pipeline_esp8266-blynk-phonkAp
 * Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
 * **Arduino Todos**
-* Open Arduino code from example Folder
-* Adjust Wifi settings and Auth Token
-* Setup Analog Sensor on Breadboard 
-* Upload Arduino code to your NodeNCU
+* - Open Arduino code from example Folder
+* - Adjust Wifi settings and Auth Token
+* - Setup Analog Sensor on Breadboard 
+* - Upload Arduino code to your NodeNCU
 * **Phonk Todos:**
-* Copy Phonk js file to your Phonk-editor
-* Adjust Auth Token
+* - Copy Phonk js file to your Phonk-editor
+* - Adjust Auth Token
 
 * Run Blynk and Phonk App
 
