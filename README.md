@@ -103,6 +103,23 @@ Example 03 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 * Run Blynk App
 
 
+## Example 04 - onBoard Button and LED  
+*Simple example showing the onBoard Button value (GPIO 0) in a display and a graph in Phonk. Remotecontroll the GPIO 16 (onBoard LED) with an virtuell-Button and dimming GPIO 2 (another onBoard LED) with an Slider*
+  
+Example 04 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/04_onBoardButtonAndLED_Phonk
+* Get blynk project by scanning the QR code in the example Folder
+* Get Device Auth Token send by Mail from Blynk.app
+* **Arduino Todos**
+ * Open Arduino code from example Folder
+ * Adjust Wifi settings and Auth Token
+ * Upload Arduino code to your NodeNCU
+* **Phonk Todos:**
+ * Copy Phonk js file to your Phonk-editor
+ * Adjust Auth Token
+
+* Run Blynk and Phonk App
+
+
 
 ## Example 05 - Sensor Input from NodeMCU and Phonk  
 *Read in Light Sensor from NodeMCU (via ADC pin) and from your Phone (via Phonk). Displaying both values in Blynk and Phonk*
@@ -124,7 +141,7 @@ Example 05 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 ## Example 06 - Servo Controlled by Phone Tilt  
 *Remote-Controll a Servo Motor by tilting your Phone*
 
-Example 05 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/06_ServoControlledByPhoneTilt
+Example 06 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/06_ServoControlledByPhoneTilt
 
 * Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
