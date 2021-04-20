@@ -107,7 +107,7 @@ Example 03 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 ## Example 05 - Sensor Input from NodeMCU and Phonk  
 *Read in Light Sensor from NodeMCU (via ADC pin) and from your Phone (via Phonk). Displaying both values in Blynk and Phonk*
 
-Example 05 Folder -->https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/05_SensorInput_FromNodeMCUandPhonk
+Example 05 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/05_SensorInput_FromNodeMCUandPhonk
 * Get blynk project by scanning the QR code in the example Folder
 * Get Device Auth Token send by Mail from Blynk.app
 * **Arduino Todos**
@@ -120,4 +120,23 @@ Example 05 Folder -->https://github.com/tomekness/pipeline_esp8266-blynk-phonkAp
  * Adjust Auth Token
 
 * Run Blynk and Phonk App
+
+## Example 06 - Servo Controlled by Phone Tilt  
+*Remote-Controll a Servo Motor by tilting your Phone*
+
+Example 05 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/06_ServoControlledByPhoneTilt
+
+* Get blynk project by scanning the QR code in the example Folder
+* Get Device Auth Token send by Mail from Blynk.app
+* **Arduino Todos**
+ * Open Arduino code from example Folder
+ * Adjust Wifi settings and Auth Token
+ * Setup Servo on Breadboard 
+ * Upload Arduino code to your NodeNCU
+* **Phonk Todos:**
+ * Copy Phonk js file to your Phonk-editor
+ * Adjust Auth Token
+
+* Run Blynk and Phonk App
+
 
