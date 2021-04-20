@@ -53,7 +53,8 @@ change blynk-server in blynk.app and arduino sketch --> https://github.com/blynk
 change 
 
 ## Example 01 - onBoard Button and LED  
-
+*Simple example showing the onBoard Button value (GPIO 0) in a display and a graph in Blynk. Remotecontroll the GPIO 16 (onBoard LED) with an virtuell-Button and dimming GPIO 2 (another onBoard LED) with an Slider*
+  
 ![Blynk Example 01](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/blynk_example_01.jpeg)
 
 Example 01 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/01_onBoardButtonAndLED
@@ -79,7 +80,7 @@ Example 02 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 * Run Blynk App
 
 ## Example 03 - controll servo motor from Blynk  
-
+*Remote-Controll a Servo Motor from Blynk*
 ![servo setup](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/servo.jpeg)
 
 Example 03 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkApp/tree/master/examples/03_ServoControll
