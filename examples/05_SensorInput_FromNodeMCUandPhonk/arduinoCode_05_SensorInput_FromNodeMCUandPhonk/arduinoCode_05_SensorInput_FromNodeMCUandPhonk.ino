@@ -1,5 +1,3 @@
-
-
 /*************************************************************
   Download latest Blynk library here:
     https://github.com/blynkkk/blynk-library/releases/latest
@@ -19,33 +17,16 @@
   This example code is in public domain.
 
  *************************************************************
-  This example runs directly on NodeMCU.
 
-  Note: This requires ESP8266 support package:
-    https://github.com/esp8266/Arduino
+  This sketch shows how to write values to Virtual Pins
 
-  Please be sure to select the right NodeMCU module
-  in the Tools -> Board menu!
-
-  For advanced settings please follow ESP examples :
-   - ESP8266_Standalone_Manual_IP.ino
-   - ESP8266_Standalone_SmartConfig.ino
-   - ESP8266_Standalone_SSL.ino
-
-  Change WiFi ssid, pass, and Blynk auth token to run :)
-  Feel free to apply it to any other example. It's simple!
- *************************************************************
-
-*************************************************************
-
-  Rotate a servo using a slider!
+  NOTE:
+  BlynkTimer provides SimpleTimer functionality:
+    http://playground.arduino.cc/Code/SimpleTimer
 
   App project setup:
-    Slider widget (0...180) on V3
-
-  Connect Servo to Pin D1 (GPIO 5)
+    Value Display widget attached to Virtual Pin V5
  *************************************************************/
-
 
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
@@ -53,25 +34,28 @@
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-#include <Servo.h>
-
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "glvJg0qxcWTOdg3IeV9t_-yrUXdZ6odE";
+char auth[] = "_JQQWV6cjq99WIsGbvySeLlHaXI73bkF";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = "cirg";
 char pass[] = "workshop";
 
-Servo servo;
+BlynkTimer timer;
 
-BLYNK_WRITE(V3)
+// This function sends Arduino's up time every second to Virtual Pin (5).
+// In the app, Widget's reading frequency should be set to PUSH. This means
+// that you define how often to send data to Blynk App.
+void myTimerEvent()
 {
-  servo.write(param.asInt());
+  // You can send any value at any time.
+  // Please don't send more that 10 values per second.
+  Blynk.virtualWrite(V5, analogRead(A0));
+  //Serial.println(analogRead(A0));
 }
-
 
 void setup()
 {
@@ -80,16 +64,19 @@ void setup()
 
   //Blynk.begin(auth, ssid, pass);
   Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
-  
+
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
 
-  servo.attach(D1);
-
+  // Setup a function to be called every second
+  //timer.setInterval(1000L, myTimerEvent);
+  // Setup a function to be called twice every second
+  timer.setInterval(500L, myTimerEvent);
 }
 
 void loop()
 {
   Blynk.run();
+  timer.run(); // Initiates BlynkTimer
 }
