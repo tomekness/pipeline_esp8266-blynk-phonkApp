@@ -65,6 +65,7 @@ Example 01 Folder --> https://github.com/tomekness/pipeline_esp8266-blynk-phonkA
 * Run Blynk App
 
 ## Example 02 - Sensor Input  
+*Read in Light Sensor via the ADC pin and dsiplay the data in Blynk*
 
 ![Breadboard Setup - Anaog Input](https://raw.githubusercontent.com/tomekness/pipeline_esp8266-blynk-phonkApp/master/images/SensorInput.jpeg)
 
