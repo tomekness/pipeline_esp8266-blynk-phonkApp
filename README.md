@@ -44,7 +44,7 @@ ADC pin --> analogRead(A0) | value --> 0–1023
 
 ![Blynk Architecture](https://docs.blynk.cc/images/architecture.png)
 
->Blynk is a hardware-agnostic IoT platform with white-label mobile apps, private clouds, device management, data analytics, and machine learning. --> https://blynk.io
+"Blynk is a hardware-agnostic IoT platform with white-label mobile apps, private clouds, device management, data analytics, and machine learning." --> https://blynk.io
 
 
 check blynk documentation --> https://docs.blynk.cc/
@@ -58,7 +58,7 @@ change blynk-server in blynk.app and arduino sketch --> https://github.com/blynk
 
 ![Phonk Editor](https://phonk.app/img/step_3_webide.png)
 
-Phonk is a Self-contained Creative scripting toolbox for new and old Android devices. --> https://phonk.app/
+"Phonk is a Self-contained Creative scripting toolbox for new and old Android devices." --> https://phonk.app/
 
 check out the documentation --> https://phonk.app/docs/1_step_installation
 
