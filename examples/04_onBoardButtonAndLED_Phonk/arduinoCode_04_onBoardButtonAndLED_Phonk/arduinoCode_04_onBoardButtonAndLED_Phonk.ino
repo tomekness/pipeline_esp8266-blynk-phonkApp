@@ -1,4 +1,6 @@
 
+// this examples uses virtual Pins to push data thru blynk to the phonk app
+// sending the value of the onBoard Button and receiving values for both onBoard LEDS 
 
 /*************************************************************
   Download latest Blynk library here:
@@ -36,17 +38,6 @@
   Feel free to apply it to any other example. It's simple!
  *************************************************************
 
-*************************************************************
-
-  Rotate a servo using a slider!
-
-  App project setup:
-    Slider widget (0...180) on V3
-
-  Connect Servo to Pin D1 (GPIO 5)
- *************************************************************/
-
-
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
 
@@ -57,7 +48,7 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "S5BOqC6DDzAdSqnyZtl-TMJb722C537o";
+char auth[] = "trfO3fkTVVpTS2oVrJQyOdHG4pbu4FOG";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
@@ -65,7 +56,6 @@ char ssid[] = "cirg";
 char pass[] = "workshop";
 
 BlynkTimer timer;
-
 
 // This function sends Arduino's up time every second to Virtual Pin (3).
 // In the app, Widget's reading frequency should be set to PUSH. This means
@@ -76,6 +66,7 @@ void myTimerEvent()
   // Please don't send more that 10 values per second.
   Blynk.virtualWrite(V3, digitalRead(D3));
 }
+
 
 BLYNK_WRITE(V1)
 {
@@ -98,14 +89,16 @@ void setup()
   //Blynk.begin(auth, ssid, pass);
   Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
   pinMode(D3, INPUT);
+  
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
 
   // Setup a function to be called every second
   //timer.setInterval(1000L, myTimerEvent);
+  
   // Setup a function to be called twice every second
-  timer.setInterval(500L, myTimerEvent);
+   timer.setInterval(500L, myTimerEvent);
 
 }
 

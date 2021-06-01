@@ -8,7 +8,7 @@
 
 
 // set your blynk token here 
-var blynkToken = "S5BOqC6DDzAdSqnyZtl-TMJb722C537o";
+var blynkToken = "trfO3fkTVVpTS2oVrJQyOdHG4pbu4FOG";
 
 ui.addTitle(app.name)
 
@@ -93,7 +93,10 @@ var loop = util.loop(repeatingSpeed, function () {
  
 
 // start / stop APPLICATON 
-ui.addToggle(['ON', 'OFF'], 0.1, 0.9, 0.8, 0.1).onChange(function (o) {
+
+var text = ui.addText('Press this button to start sending data', 0.1, 0.8)
+
+ui.addToggle(['ON', 'OFF'], 0.1, 0.85, 0.8, 0.1).onChange(function (o) {
   if (o.checked) {
     loop.start();
   }
