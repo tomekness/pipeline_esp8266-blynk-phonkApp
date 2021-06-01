@@ -1,6 +1,7 @@
 
 // This is Just a copy of the original blynk example for NodeMCU 
-// and as well same Code as in Example 01 - you actually just need to change the token in example 01
+// and as well same Code as in Example 01 
+// (you actually just need to change the token in example 01)
 
 /*************************************************************
   Download latest Blynk library here:
@@ -47,7 +48,7 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "EMXV8vR3TPqThRuQvv58rsFRfPhVNzJV";
+char auth[] = "0gZLS1h9QQfByUVsYUjud6wqYHCDhh-h";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
@@ -60,7 +61,6 @@ void setup()
   Serial.begin(9600);
 
   //Blynk.begin(auth, ssid, pass);
-  Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
   
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
