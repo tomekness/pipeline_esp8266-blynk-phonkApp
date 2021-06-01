@@ -1,4 +1,5 @@
 
+// This is Just a copy of the original blynk servo example for NodeMCU 
 
 /*************************************************************
   Download latest Blynk library here:
@@ -67,8 +68,10 @@ char pass[] = "workshop";
 
 Servo servo;
 
+// this function will be called when there is a value change at the virtuel button V3
 BLYNK_WRITE(V3)
 {
+  // change servo postion accordingly to the value of V3 
   servo.write(param.asInt());
 }
 
@@ -78,13 +81,13 @@ void setup()
   // Debug console
   Serial.begin(9600);
 
-  //Blynk.begin(auth, ssid, pass);
-  Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
+  Blynk.begin(auth, ssid, pass);
   
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
 
+  // select the Pin, the Servo is connected to 
   servo.attach(D1);
 
 }
