@@ -8,7 +8,7 @@
 
 
 // set your blynk token here 
-var blynkToken = "_JQQWV6cjq99WIsGbvySeLlHaXI73bkF";
+var blynkToken = "D1-kl6PYqAEizTuPya2ZbuSRrHk9l_m4";
 
 ui.addTitle(app.name)
 
@@ -59,8 +59,9 @@ var loop = util.loop(repeatingSpeed, function () {
 
 
 // start / stop light sensor
-ui.addToggle(['ON', 'OFF'], 0.1, 0.9, 0.8, 0.1).onChange(function (o) {
-  if (o.checked) {
+var text = ui.addText('Press this button to start sending data', 0.1, 0.8)
+
+ui.addToggle(['ON', 'OFF'], 0.1, 0.85, 0.8, 0.1).onChange(function (o) {  if (o.checked) {
     sensors.light.start()
     loop.start();
   }

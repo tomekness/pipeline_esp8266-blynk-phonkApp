@@ -1,6 +1,12 @@
 
-// this examples uses virtual Pins to push data thru blynk to the phonk app
-// sending the value of the onBoard Button and receiving values for both onBoard LEDS 
+/*
+ * UltraTool | NodeMCU - Blynk - phonk pipeline workshop | Spring 2021
+ * 
+ * // this examples uses virtual Pins to push data thru blynk to the phonk app
+ * // sending the value of the onBoard Button and receiving values for both onBoard LEDS 
+ * 
+ */
+
 
 /*************************************************************
   Download latest Blynk library here:
@@ -85,10 +91,9 @@ void setup()
 {
   // Debug console
   Serial.begin(9600);
+  pinMode(D3, INPUT);
 
   //Blynk.begin(auth, ssid, pass);
-  Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
-  pinMode(D3, INPUT);
   
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);

@@ -1,3 +1,12 @@
+
+/*
+ * UltraTool | NodeMCU - Blynk - phonk pipeline workshop | Spring 2021
+ * 
+ * // this examples uses virtual Pins to push data thru blynk to the phonk app
+ * // sending the value of the analog Input (conneceted to a light sensor (LDR))
+ * 
+ */
+
 /*************************************************************
   Download latest Blynk library here:
     https://github.com/blynkkk/blynk-library/releases/latest
@@ -37,7 +46,7 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "_JQQWV6cjq99WIsGbvySeLlHaXI73bkF";
+char auth[] = "D1-kl6PYqAEizTuPya2ZbuSRrHk9l_m4";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
@@ -63,7 +72,6 @@ void setup()
   Serial.begin(9600);
 
   //Blynk.begin(auth, ssid, pass);
-  Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
 
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
