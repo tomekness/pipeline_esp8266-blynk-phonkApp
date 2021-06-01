@@ -53,7 +53,7 @@ var repeatingSpeed = 500
 var loop = util.loop(repeatingSpeed, function () {
   
   // send value for  LED 1
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/update/v1?value=" + led1;
+  var url = "http://blynk-cloud.com/" + blynkToken + "/update/v1?value=" + led1;
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({
@@ -64,7 +64,7 @@ var loop = util.loop(repeatingSpeed, function () {
   });
   
   // send value for  LED 2
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/update/v2?value=" + led2;
+  var url = "http://blynk-cloud.com/" + blynkToken + "/update/v2?value=" + led2;
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({
@@ -75,7 +75,7 @@ var loop = util.loop(repeatingSpeed, function () {
   });
   
   // receive buton state 
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/get/v3";
+  var url = "http://blynk-cloud.com/" + blynkToken + "/get/v3";
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({

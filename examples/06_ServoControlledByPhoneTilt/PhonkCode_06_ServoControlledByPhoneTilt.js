@@ -8,7 +8,7 @@
 
 
 // set your blynk token here 
-var blynkToken = "XAEkQ44DOM7EA0zrRxKs9X1SMwzV-bEu";
+var blynkToken = "oHzUtjhw73mQuIL--E_FzUNqeRx09X3A";
 
 
 ui.addTitle(app.name)
@@ -36,7 +36,7 @@ var repeatingSpeed = 200
 
 var loop = util.loop(repeatingSpeed, function () {
   
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/update/v3?value=" + tilt;
+  var url = "http://blynk.io/" + blynkToken + "/update/v3?value=" + tilt;
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({

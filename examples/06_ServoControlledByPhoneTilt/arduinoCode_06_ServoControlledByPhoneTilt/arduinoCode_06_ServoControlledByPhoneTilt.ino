@@ -1,4 +1,10 @@
 
+/*
+ * UltraTool | NodeMCU - Blynk - phonk pipeline workshop | Spring 2021
+ * 
+ * // controlling a servo motor from phonk
+ * 
+ */
 
 /*************************************************************
   Download latest Blynk library here:
@@ -58,7 +64,7 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "XAEkQ44DOM7EA0zrRxKs9X1SMwzV-bEu";
+char auth[] = "oHzUtjhw73mQuIL--E_FzUNqeRx09X3A";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
@@ -70,6 +76,7 @@ Servo servo;
 BLYNK_WRITE(V3)
 {
   servo.write(param.asInt());
+  //Serial.println(param.asInt());
 }
 
 
@@ -78,8 +85,7 @@ void setup()
   // Debug console
   Serial.begin(9600);
 
-  //Blynk.begin(auth, ssid, pass);
-  Blynk.begin(auth, ssid, pass, "tomekness.ddns.net", 8080);
+  Blynk.begin(auth, ssid, pass);
   
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);

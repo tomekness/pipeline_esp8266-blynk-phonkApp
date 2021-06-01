@@ -30,7 +30,7 @@ var repeatingSpeed = 500
 
 var loop = util.loop(repeatingSpeed, function () {
   
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/update/v4?value=" + intensity;
+  var url = "http://blynk-cloud.com/" + blynkToken + "/update/v4?value=" + intensity;
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({
@@ -40,7 +40,7 @@ var loop = util.loop(repeatingSpeed, function () {
    // console.log(e.status, e.response) // just needed for debugging
   });
   
-  var url = "http://tomekness.ddns.net:8080/" + blynkToken + "/get/v5";
+  var url = "http://blynk-cloud.com/" + blynkToken + "/get/v5";
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({
