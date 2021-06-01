@@ -36,7 +36,7 @@ var repeatingSpeed = 200
 
 var loop = util.loop(repeatingSpeed, function () {
   
-  var url = "http://blynk.io/" + blynkToken + "/update/v3?value=" + tilt;
+  var url = "http://blynk-cloud.com/" + blynkToken + "/update/v3?value=" + tilt;
   url = url.toString();   
   //console.log(data.x)
   network.httpRequest({
@@ -50,7 +50,9 @@ var loop = util.loop(repeatingSpeed, function () {
  
 
 // start / stop accelerometer
-ui.addToggle(['ON', 'OFF'], 0.1, 0.9, 0.2, 0.1).onChange(function (o) {
+var text = ui.addText('Press this button to start sending data', 0.1, 0.8)
+
+  ui.addToggle(['ON', 'OFF'], 0.1, 0.85, 0.8, 0.1).onChange(function (o) {
   if (o.checked) {
     sensors.accelerometer.start();
     loop.start();
